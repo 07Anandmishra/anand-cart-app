@@ -1,5 +1,8 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import img1 from '../images/2.webp'
+import img2 from '../images/3.webp'
+import img3 from '../images/6.webp'
 
 function UncontrolledExample() {
   return (
@@ -7,7 +10,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100 "
-          src='./images/2.webp'
+          src={img1}
           alt="First slide" style={{height:'500px'}}
         />
         <Carousel.Caption>
@@ -18,7 +21,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100 "
-          src="./images/3.webp"
+          src={img2}
           alt="Second slide" style={{height:'500px'}}
         />
 
@@ -30,7 +33,7 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100 "
-          src="./images/6.webp"
+          src={img3}
           alt="Third slide" style={{height:'500px'}}
         />
 
