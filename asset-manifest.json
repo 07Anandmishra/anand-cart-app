@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/anand-cart-app/static/css/main.bf0c733e.css",
-    "main.js": "/anand-cart-app/static/js/main.259c4862.js",
+    "main.js": "/anand-cart-app/static/js/main.eb17a8ab.js",
     "static/js/787.b05849a0.chunk.js": "/anand-cart-app/static/js/787.b05849a0.chunk.js",
     "static/media/8.jpeg": "/anand-cart-app/static/media/8.9916d5a1c2deb2b9b072.jpeg",
+    "static/media/2.webp": "/anand-cart-app/static/media/2.b2556f8d1c46ba292da3.webp",
+    "static/media/3.webp": "/anand-cart-app/static/media/3.fb38d6af113177af14e5.webp",
+    "static/media/6.webp": "/anand-cart-app/static/media/6.7cd71f461bd4f2b3fdf1.webp",
     "index.html": "/anand-cart-app/index.html",
     "main.bf0c733e.css.map": "/anand-cart-app/static/css/main.bf0c733e.css.map",
-    "main.259c4862.js.map": "/anand-cart-app/static/js/main.259c4862.js.map",
+    "main.eb17a8ab.js.map": "/anand-cart-app/static/js/main.eb17a8ab.js.map",
     "787.b05849a0.chunk.js.map": "/anand-cart-app/static/js/787.b05849a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf0c733e.css",
-    "static/js/main.259c4862.js"
+    "static/js/main.eb17a8ab.js"
   ]
 }
