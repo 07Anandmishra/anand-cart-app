@@ -14,7 +14,7 @@ const Index = () => {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [filterButton, setFilterButton] = useState([]);
-  const [page, setPage] = useState(1);
+
   const dispatch = useDispatch();
 
   const ADD = (product) => {
@@ -43,14 +43,7 @@ const Index = () => {
     getAllProducts();
   }, []);
 
-  const selectedPage = (selectpage) => {
-    if (
-      selectpage >= 1 &&
-      selectpage <= products.length / 5 &&
-      selectpage !== page
-    )
-      setPage(selectpage);
-  };
+
 
   const Loading = () => {
     return <h6 className="text-center">Product Loading....</h6>;
@@ -130,7 +123,7 @@ const Index = () => {
                 <Loading />
               ) : (
                 products
-                  .slice(page * 5 - 5, page * 5)
+                //   .slice(page * 10 - 10, page * 10)
                   .filter((items) => {
                     if (search === "") {
                       return products;
@@ -216,24 +209,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        {products.length > 0 && (
-          <div className="pagination">
-            <span onClick={() => selectedPage(page - 1)}>◀️</span>
-            {[...Array(products.length / 5)].map((_, i) => {
-              return (
-                <span
-                  className={page === i + 1 ? "pagination_selected" : ""}
-                  onClick={() => selectedPage(i + 1)}
-                  key={i}
-                >
-                  {i + 1}
-                </span>
-              );
-            })}
-
-            <span onClick={() => selectedPage(page + 1)}>▶️</span>
-          </div>
-        )}
+       
       </div>
     </>
   );

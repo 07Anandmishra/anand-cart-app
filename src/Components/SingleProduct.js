@@ -5,6 +5,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 import StarIcon from "@mui/icons-material/Star";
+import { Rating } from "@mui/material";
 
 const SingleProduct = () => {
   const [singleProduct, setSingleProduct] = useState([]);
@@ -103,7 +104,9 @@ const SingleProduct = () => {
                       <div className="sold_stars ml-auto">
                        
                         Rating
-                        {singleProduct.rating && singleProduct.rating.rate}{" "}
+                        {singleProduct.rating && singleProduct.rating.rate}
+                      
+                  
                         <StarIcon />
                       </div>
                     </div>
